@@ -1,28 +1,207 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
 body {
-    background-color: #ffffff;
-    color: #000000;
-    font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    transition: 0.3s;
-  }
+  background-color: #fdf8f2;
+  color: #2c221e;
+  font-family: Georgia, "Times New Roman", serif;
+  line-height: 1.7;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
 
-  .box {
-    text-align: center;
-    padding: 30px;
-    border-radius: 10px;
-    border: 1px solid #ccc;
-  }
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 8%;
+  background-color: #fdf8f2;
+  border-bottom: 1px solid #e8dfd5;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
 
-  button {
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    border: none;
-    border-radius: 5px;
-    background-color: #007bff;
-    color: white;
-  }
+.logo {
+  font-size: 21px;
+  font-weight: bold;
+  text-decoration: none;
+  color: inherit;
+}
+
+.nav-links {
+  display: flex;
+  gap: 26px;
+  font-family: Arial, sans-serif;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 14px;
+  font-weight: bold;
+  opacity: 0.85;
+}
+
+.nav-links a:hover {
+  color: #b45309;
+}
+
+.theme-btn {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: 1px solid #dfd4c8;
+  background-color: #ffffff;
+  font-size: 19px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.theme-btn:hover {
+  transform: scale(1.08);
+}
+
+.hero {
+  max-width: 740px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 95px 24px 70px;
+}
+
+.eyebrow {
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  color: #b45309;
+  margin-bottom: 14px;
+}
+
+.hero h2 {
+  font-size: 42px;
+  line-height: 1.2;
+  margin-bottom: 18px;
+}
+
+.hero-sub {
+  font-family: Arial, sans-serif;
+  font-size: 17px;
+  opacity: 0.85;
+  margin-bottom: 30px;
+}
+
+.cta-btn {
+  display: inline-block;
+  font-family: Arial, sans-serif;
+  padding: 13px 26px;
+  background-color: #78350f;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 15px;
+  transition: background-color 0.2s ease;
+}
+
+.cta-btn:hover {
+  background-color: #92400e;
+}
+
+.section {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 60px 24px;
+  text-align: center;
+}
+
+.section h2 {
+  font-size: 30px;
+  margin-bottom: 16px;
+}
+
+.section-text {
+  font-family: Arial, sans-serif;
+  max-width: 660px;
+  margin: 0 auto;
+  font-size: 16px;
+  opacity: 0.88;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 22px;
+  margin-top: 30px;
+  text-align: left;
+}
+
+.card {
+  background-color: #ffffff;
+  padding: 26px;
+  border-radius: 14px;
+  border: 1px solid #e8dfd5;
+  transition: transform 0.2s ease, background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+.card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.card-top h3 {
+  font-size: 20px;
+}
+
+.price {
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  color: #b45309;
+}
+
+.card p {
+  font-family: Arial, sans-serif;
+  font-size: 15px;
+  opacity: 0.85;
+}
+
+.footer {
+  text-align: center;
+  padding: 55px 24px 40px;
+  margin-top: 40px;
+  border-top: 1px solid #e8dfd5;
+  transition: border-color 0.3s ease;
+}
+
+.footer h2 {
+  font-size: 26px;
+  margin-bottom: 8px;
+}
+
+.footer p {
+  font-family: Arial, sans-serif;
+  font-size: 15px;
+  opacity: 0.85;
+  margin-bottom: 10px;
+}
+
+.copyright {
+  font-size: 13px;
+  opacity: 0.65;
+  margin-top: 16px;
+}
